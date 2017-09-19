@@ -28,7 +28,7 @@ def classifier_variables(trainable):
         dense_bias = tf.Variable(tf.constant(0.01, shape=[1, 1024]), trainable=trainable, name='dense_bias')
         logits_W = tf.get_variable(name="logits_W", shape=[1024, 10], trainable=trainable,
                                    initializer=(
-                                   tf.contrib.layers.xavier_initializer_conv2d(uniform=False, dtype=tf.float32)))
+                                   tf.contrib.layers.xavier_initializer(uniform=False, dtype=tf.float32)))
         logits_bias = tf.Variable(tf.constant(0.01, shape=[1, 10]), trainable=trainable, name='logits_bias')
         return [con1, bias1, con2, bias2, dense_W, dense_bias, logits_W, logits_bias]
 
@@ -183,19 +183,19 @@ def adversarial_weights(model):
         bias3 = tf.Variable(tf.constant(0.01, shape=[1, 1, 1, 128]), name="bias3_ad")
         logits_W = tf.get_variable(name="logits_W_ad", shape=[128*4*4, 1],
                                    initializer=(
-                                   tf.contrib.layers.xavier_initializer_conv2d(uniform=False, dtype=tf.float32)))
+                                   tf.contrib.layers.xavier_initializer(uniform=False, dtype=tf.float32)))
         logits_bias = tf.Variable(tf.constant(0.01, shape=[1, 1]), name='logits_bias_ad')
         return [con1, bias1, con2, bias2, con3, bias3, logits_W, logits_bias]
 
 def adverserial_network(input, weights, model):
     # 1st convolutional layer (pic size 28)
-    conv1 = lrelu(tf.nn.conv2d(input, weights[0], strides=[1, 2, 2, 1], padding='SAME') + weights[1])
+    conv1 = tf.nn.relu(tf.nn.conv2d(input, weights[0], strides=[1, 2, 2, 1], padding='SAME') + weights[1])
 
     # 2nd conv layer (pic size 14)
-    conv2 = lrelu(tf.nn.conv2d(conv1, weights[2], strides=[1, 2, 2, 1], padding='SAME') + weights[3])
+    conv2 = tf.nn.relu(tf.nn.conv2d(conv1, weights[2], strides=[1, 2, 2, 1], padding='SAME') + weights[3])
 
     # 3rd conv layer (pic size 7)
-    conv3 = lrelu(tf.nn.conv2d(conv2, weights[4], strides=[1, 2, 2, 1], padding='SAME') + weights[5])
+    conv3 = tf.nn.relu(tf.nn.conv2d(conv2, weights[4], strides=[1, 2, 2, 1], padding='SAME') + weights[5])
 
     # reshape (pic size 4)
     p2resh = tf.reshape(conv3, [-1, 128 * 4 * 4])

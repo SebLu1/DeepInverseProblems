@@ -268,7 +268,7 @@ class l2(object):
     def evaluate(self):
         x_ini_np, x_true_np, y_np, lab_np = self.simulated_measurements(100, validation_data=True)
         summary, step_number,  picture, loss_evaluation = self.sess.run(
-            [self.merged, self.global_step, self.result, self.lossL2, ],
+            [self.merged, self.global_step, self.result, self.lossL2],
             feed_dict={self.x_ini: x_ini_np, self.x_true: x_true_np,
                        self.y: y_np})
         original_loss = np.square(x_ini_np - x_true_np)
@@ -277,7 +277,6 @@ class l2(object):
             (original_loss.sum()) / 100) +
               ', Net Improvement: ' + str(((original_loss.sum()) / 100) - loss_evaluation))
         self.writer.add_summary(summary, step_number)
-
         self.save_pic(x_true_np, x_ini_np, picture, step_number)
 
     # the training routine
@@ -336,7 +335,7 @@ class JointTraining(l2):
 
         # define linear combination of L2 and classification loss
         with tf.name_scope('Loss_sum_class_l2'):
-            self.lossL2Clas = self.lossL2 + self.weightL2_combinedNorms * self.lossClas
+            self.lossL2Clas = self.weightL2_combinedNorms * self.lossL2 + self.lossClas
 
         # Optimizer for Joint Training
         with tf.name_scope('Joint_learning'):
@@ -352,17 +351,53 @@ class JointTraining(l2):
 
     # change inherited methode to include CE and classification acc
     def evaluate(self):
-        pass
+        x_ini_np, x_true_np, y_np, lab_np = self.simulated_measurements(100, validation_data=True)
+        summary, step_number,  picture, loss_evaluation, CE, acc = self.sess.run(
+            [self.merged, self.global_step, self.result, self.lossL2, self.lossClas, self.eval_metric],
+            feed_dict={self.x_ini: x_ini_np, self.x_true: x_true_np,
+                       self.y: y_np, self.labels: lab_np})
+        original_loss = np.square(x_ini_np - x_true_np)
+        print('Iteration: ' + str(step_number) + ', Loss: ' +
+              "{0:.6g}".format(loss_evaluation) + ', Original Loss: ' + "{0:.6g}".format(
+            (original_loss.sum()) / 100) +
+              ', Net Improvement: ' + str(((original_loss.sum()) / 100) - loss_evaluation) + ', CE: '
+              + str(CE) + ', Accuracy: ' + str(acc))
+        self.writer.add_summary(summary, step_number)
+        self.save_pic(x_true_np, x_ini_np, picture, step_number)
 
     #### to be written!
     def train_L2(self, training_steps):
-        pass
+        for i in range(training_steps):
+            #model evaluation
+            if i %  10 == 0:
+                self.evaluate()
+            #train the network
+            x_ini_np, x_true_np, y_np, lab_np = self.simulated_measurements(self.batch_size, validation_data=False)
+            self.sess.run(self.optimizer_L2, feed_dict={self.x_ini: x_ini_np, self.x_true: x_true_np,
+                                                        self.y: y_np, self.labels: lab_np})
+        self.save()
 
     def train_class_loss(self, training_steps):
-        pass
+        for i in range(training_steps):
+            #model evaluation
+            if i %  10 == 0:
+                self.evaluate()
+            #train the network
+            x_ini_np, x_true_np, y_np, lab_np = self.simulated_measurements(self.batch_size, validation_data=False)
+            self.sess.run(self.optimizer_class_loss, feed_dict={self.x_ini: x_ini_np, self.x_true: x_true_np,
+                                                        self.y: y_np, self.labels: lab_np})
+        self.save()
 
     def train_jointly(self, training_steps):
-        pass
+        for i in range(training_steps):
+            #model evaluation
+            if i %  10 == 0:
+                self.evaluate()
+            #train the network
+            x_ini_np, x_true_np, y_np, lab_np = self.simulated_measurements(self.batch_size, validation_data=False)
+            self.sess.run(self.optimizer_joint, feed_dict={self.x_ini: x_ini_np, self.x_true: x_true_np,
+                                                        self.y: y_np, self.labels: lab_np})
+        self.save()
 
 
 class Adverserial(l2):
@@ -374,28 +409,29 @@ class Adverserial(l2):
         return ut.adversarial_weights(self.model_name)
 
     def adverserial_model(self, input, weights):
-        return ut.adverserial_network(self.result, self.adv_weights, '')
+        return ut.adverserial_network(input, weights, '')
 
     def __init__(self):
         super(Adverserial, self).__init__(final=False)
 
         # The network for adverserial training
         self.adv_weights = self.get_adverserial_weights()
-        adv_class_net = self.adverserial_model(self.result, self.adv_weights)
-        adv_class_true = self.adverserial_model(self.x_true, self.adv_weights)
+        scaling_factor = 1
+        self.adv_class_net = self.adverserial_model(scaling_factor*self.result, self.adv_weights)
+        self.adv_class_true = self.adverserial_model(scaling_factor*self.x_true, self.adv_weights)
 
         # loss of adverserial Network during training given by misclassification loss of true data and network data
-        self.loss_adv = -tf.reduce_mean(tf.log(adv_class_true) + tf.log(1. - adv_class_net))
+        self.loss_adv = -tf.reduce_mean(tf.log(self.adv_class_true) + tf.log(1. - self.adv_class_net))
 
         # evaluation metric for classification
-        self.acc_adv = (tf.reduce_mean(tf.cast(tf.greater(0.5, adv_class_net), tf.float32)) +
-                        tf.reduce_mean(tf.cast(tf.greater(adv_class_true, 0.5), tf.float32))) / 2
+        self.acc_adv = (tf.reduce_mean(tf.cast(tf.greater(0.5, self.adv_class_net), tf.float32)) +
+                        tf.reduce_mean(tf.cast(tf.greater(self.adv_class_true, 0.5), tf.float32))) / 2
 
         # loss of the generator trying to fool the adverserial network
-        self.loss_gen = -tf.reduce_mean(tf.log(adv_class_net))
+        self.loss_gen = -tf.reduce_mean(tf.log(self.adv_class_net))
 
         # evaluation metric for generator
-        self.acc_gen = tf.reduce_mean(tf.cast(tf.greater(adv_class_net, 0.5), tf.float32))
+        self.acc_gen = tf.reduce_mean(tf.cast(tf.greater(self.adv_class_net, 0.5), tf.float32))
 
         # the optimizers
         self.optimizer_adverserial = tf.train.AdamOptimizer(self.learning_rate_adv).minimize(self.loss_adv,
@@ -421,9 +457,10 @@ class Adverserial(l2):
 
     def evaluate_adv_net(self):
         x_ini_np, x_true_np, y_np, lab_np = self.simulated_measurements(100, validation_data=True)
-        accuracy, crossE = self.sess.run([self.acc_adv, self.loss_adv], feed_dict={self.x_ini: x_ini_np,
+        out_true, out_recon, accuracy, crossE = self.sess.run([self.adv_class_true, self.adv_class_net, self.acc_adv, self.loss_adv], feed_dict={self.x_ini: x_ini_np,
                                                                                    self.x_true: x_true_np, self.y: y_np})
-        print('Discrimination accuracy: ' + str(accuracy) +', CE: ' + str(crossE))
+        print('Discrimination accuracy: ' + str(accuracy) +', CE: ' + str(crossE) + ', Output Net True: '
+              + str(out_true[0,0]) + ', Output Net Fake: ' + str(out_recon[0,0]))
 
 
     def train_adv(self, training_steps, steps_gen, steps_adv):
@@ -432,6 +469,7 @@ class Adverserial(l2):
             # train the adverserial network to discriminate between real data and network data
             print('Training Adverserial Network')
             for k in range(steps_adv):
+                self.evaluate_adv_net()
                 x_ini_np, x_true_np, y_np, lab_np = self.simulated_measurements(self.batch_size, validation_data=False)
                 self.sess.run(self.optimizer_adverserial, feed_dict={self.x_ini: x_ini_np,
                                                                      self.x_true: x_true_np, self.y: y_np})
@@ -440,6 +478,7 @@ class Adverserial(l2):
                 x_ini_np, x_true_np, y_np, lab_np = self.simulated_measurements(self.batch_size, validation_data=False)
                 self.sess.run(self.optimizer_generator, feed_dict={self.x_ini: x_ini_np,
                                                                    self.x_true: x_true_np, self.y: y_np})
+            self.evaluate()
         self.save()
 
 

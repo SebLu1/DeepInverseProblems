@@ -1,4 +1,4 @@
 import ImageRecon_classes as ir
 
-recon = ir.JointTraining()
-recon.train_L2(100)
+recon = ir.Adverserial()
+recon.train_adv(10, 0, 20)
