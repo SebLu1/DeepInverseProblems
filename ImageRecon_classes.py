@@ -146,7 +146,7 @@ class l2(object):
         self.merged = tf.summary.merge_all()
 
         # training logger
-        self.writer = tf.summary.FileWriter('Data/' + self.model_name + '/logs', self.sess.graph)
+        self.writer = tf.summary.FileWriter('Data/' + self.model_name + '/Logs', self.sess.graph)
 
         # Initialize Saver
         self.saver = tf.train.Saver()

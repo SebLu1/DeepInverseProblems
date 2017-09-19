@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="66148222-bfde-4998-a425-d4226887e3de" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/joint_training.py" afterPath="$PROJECT_DIR$/joint_training.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ImageRecon_classes.py" afterPath="$PROJECT_DIR$/ImageRecon_classes.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -15,11 +15,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file leaf-file-name="ImageRecon_classes.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ImageRecon_classes.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ImageRecon_classes.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="233">
-              <caret line="445" column="28" lean-forward="false" selection-start-line="445" selection-start-column="28" selection-end-line="445" selection-end-column="28" />
+            <state relative-caret-position="227">
+              <caret line="148" column="78" lean-forward="false" selection-start-line="148" selection-start-column="74" selection-end-line="148" selection-end-column="78" />
               <folding>
                 <element signature="e#6566#6698#0" expanded="false" />
                 <element signature="e#6857#8553#0" expanded="false" />
@@ -40,11 +40,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="joint_training.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="joint_training.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/joint_training.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="14" column="8" lean-forward="false" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
+            <state relative-caret-position="350">
+              <caret line="14" column="9" lean-forward="true" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -80,6 +80,7 @@
       <find>use</find>
       <find>loss</find>
       <find>recon_we</find>
+      <find>logs</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -102,9 +103,9 @@
         <option value="$PROJECT_DIR$/old/ImageRecon.py" />
         <option value="$PROJECT_DIR$/utilities.py" />
         <option value="$PROJECT_DIR$/L2.py" />
-        <option value="$PROJECT_DIR$/ImageRecon_classes.py" />
         <option value="$PROJECT_DIR$/adverserial.py" />
         <option value="$PROJECT_DIR$/joint_training.py" />
+        <option value="$PROJECT_DIR$/ImageRecon_classes.py" />
       </list>
     </option>
   </component>
@@ -432,7 +433,14 @@
       <option name="project" value="LOCAL" />
       <updated>1505859884976</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="overnight calculation prepared">
+      <created>1505860207057</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1505860207057</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -486,7 +494,8 @@
     <MESSAGE value="joint training and adverserial training ready" />
     <MESSAGE value="preperation for overnight calculation" />
     <MESSAGE value="some saves deleted" />
-    <option name="LAST_COMMIT_MESSAGE" value="some saves deleted" />
+    <MESSAGE value="overnight calculation prepared" />
+    <option name="LAST_COMMIT_MESSAGE" value="overnight calculation prepared" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -760,19 +769,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ImageRecon_classes.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="445" column="28" lean-forward="false" selection-start-line="445" selection-start-column="28" selection-end-line="445" selection-end-column="28" />
-          <folding>
-            <element signature="e#6566#6698#0" expanded="false" />
-            <element signature="e#6857#8553#0" expanded="false" />
-            <element signature="e#8676#9820#0" expanded="false" />
-            <element signature="e#9892#10329#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/L2.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -791,9 +787,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/joint_training.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="14" column="8" lean-forward="false" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
+        <state relative-caret-position="350">
+          <caret line="14" column="9" lean-forward="true" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ImageRecon_classes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="148" column="78" lean-forward="false" selection-start-line="148" selection-start-column="74" selection-end-line="148" selection-end-column="78" />
+          <folding>
+            <element signature="e#6566#6698#0" expanded="false" />
+            <element signature="e#6857#8553#0" expanded="false" />
+            <element signature="e#8676#9820#0" expanded="false" />
+            <element signature="e#9892#10329#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
