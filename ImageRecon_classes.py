@@ -294,7 +294,7 @@ class l2(object):
             x_ini_np, x_true_np, y_np, lab_np = self.simulated_measurements(self.batch_size, validation_data=False)
             self.sess.run(self.optimizer_L2, feed_dict={self.x_ini: x_ini_np, self.x_true: x_true_np,
                                                         self.y: y_np})
-            self.save()
+        self.save()
 
 
 class Classification_Loss(l2):
