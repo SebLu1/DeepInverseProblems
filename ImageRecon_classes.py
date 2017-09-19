@@ -352,7 +352,12 @@ class Classification_Loss(l2):
         with tf.name_scope('Learning_clssifier_loss'):
             self.optimizer_class_loss = tf.train.AdamOptimizer(self.learning_rate).minimize(self.lossL2Clas,
                                                                                                 global_step=self.global_step,
-                                                                                            var_list=self.weights_recon)
+                                                                                        var_list=self.weights_recon)
+        # Optimizer for the classifier only
+        with tf.name_scope('Learning_clssifier_loss'):
+            self.optimizer_classifier_only = tf.train.AdamOptimizer(self.learning_rate).minimize(self.lossClas,
+                                                                                                global_step=self.global_step,
+                                                                                                var_list=self.weights_classifier)
         self.finish_setup()
 
     # change inherited methode to include CE and classification acc
@@ -394,6 +399,17 @@ class Classification_Loss(l2):
                                                         self.y: y_np, self.labels: lab_np})
         self.save()
 
+    def train_classifier_only(self, training_steps):
+        for i in range(training_steps):
+            #model evaluation
+            if i %  10 == 0:
+                self.evaluate()
+            #train the network
+            x_ini_np, x_true_np, y_np, lab_np = self.simulated_measurements(self.batch_size, validation_data=False)
+            self.sess.run(self.optimizer_classifier_only, feed_dict={self.x_ini: x_ini_np, self.x_true: x_true_np,
+                                                        self.y: y_np, self.labels: lab_np})
+        self.save()
+
     def train_jointly(self, training_steps):
         for i in range(training_steps):
             #model evaluation
@@ -426,15 +442,18 @@ class Adverserial(l2):
         self.adv_class_net = self.adverserial_model(scaling_factor*self.result, self.adv_weights)
         self.adv_class_true = self.adverserial_model(scaling_factor*self.x_true, self.adv_weights)
 
+        # decide where to cut off the logarithm to avoid numerical instabilities
+        log_cut = 0.000000001
         # loss of adverserial Network during training given by misclassification loss of true data and network data
-        self.loss_adv = -tf.reduce_mean(tf.log(self.adv_class_true) + tf.log(1. - self.adv_class_net))
+        self.loss_adv = -tf.reduce_mean(tf.log(tf.maximum(self.adv_class_true, log_cut))
+                                        + tf.log(tf.maximum(1. - self.adv_class_net, log_cut)))
 
         # evaluation metric for classification
         self.acc_adv = (tf.reduce_mean(tf.cast(tf.greater(0.5, self.adv_class_net), tf.float32)) +
                         tf.reduce_mean(tf.cast(tf.greater(self.adv_class_true, 0.5), tf.float32))) / 2
 
         # loss of the generator trying to fool the adverserial network
-        self.loss_gen = -tf.reduce_mean(tf.log(self.adv_class_net))
+        self.loss_gen = -tf.reduce_mean(tf.log(tf.maximum(self.adv_class_net, log_cut)))
 
         # evaluation metric for generator
         self.acc_gen = tf.reduce_mean(tf.cast(tf.greater(self.adv_class_net, 0.5), tf.float32))
@@ -475,10 +494,10 @@ class Adverserial(l2):
             # train the adverserial network to discriminate between real data and network data
             print('Training Adverserial Network')
             for k in range(steps_adv):
-                self.evaluate_adv_net()
                 x_ini_np, x_true_np, y_np, lab_np = self.simulated_measurements(self.batch_size, validation_data=False)
                 self.sess.run(self.optimizer_adverserial, feed_dict={self.x_ini: x_ini_np,
                                                                      self.x_true: x_true_np, self.y: y_np})
+            self.evaluate_adv_net()
             print('Training Generator')
             for k in range(steps_gen):
                 x_ini_np, x_true_np, y_np, lab_np = self.simulated_measurements(self.batch_size, validation_data=False)
