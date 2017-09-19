@@ -28,6 +28,11 @@ class l2(object):
     attenuation_coeff = 0.2
     pic_size = 28
 
+    # close session
+    def end(self):
+        tf.reset_default_graph()
+        self.sess.close()
+
     # methode shall be overwritten in subclasse
     def get_weights(self):
         return ut.reconstruction_variables('model-1')
@@ -292,7 +297,7 @@ class l2(object):
             self.save()
 
 
-class JointTraining(l2):
+class Classification_Loss(l2):
     weightL2_combinedNorms = 0
     model_name = 'Classification_Loss'
 

@@ -1,4 +1,8 @@
 import ImageRecon_classes as ir
 
-recon = ir.Adverserial()
-recon.train_adv(10, 0, 20)
+class Loss_L2(ir.l2):
+    model_name = 'L2-Loss'
+
+if __name__ == '__main__':
+    recon = ir.l2()
+    recon.train_L2(3000)

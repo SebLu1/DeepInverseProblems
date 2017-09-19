@@ -2,11 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="66148222-bfde-4998-a425-d4226887e3de" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/adverserial.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/joint_training.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/Classification_Loss/Logs/events.out.tfevents.1505833280.LAPTOP-E6AJ1CPF" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/Classification_Loss/Logs/events.out.tfevents.1505833366.LAPTOP-E6AJ1CPF" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/Classification_Loss/Logs/events.out.tfevents.1505833621.LAPTOP-E6AJ1CPF" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/Classification_Loss/Logs/events.out.tfevents.1505833659.LAPTOP-E6AJ1CPF" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ImageRecon_classes.py" afterPath="$PROJECT_DIR$/ImageRecon_classes.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/L2.py" afterPath="$PROJECT_DIR$/L2.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/utilities.py" afterPath="$PROJECT_DIR$/utilities.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,37 +22,16 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file leaf-file-name="ImageRecon.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/old/ImageRecon.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="558">
-              <caret line="275" column="68" lean-forward="false" selection-start-line="275" selection-start-column="68" selection-end-line="275" selection-end-column="68" />
-              <folding>
-                <element signature="e#0#38#0" expanded="true" />
-                <element signature="e#5607#5983#0" expanded="false" />
-                <marker date="1505841919507" expanded="true" signature="1074:1243" ph="..." />
-                <marker date="1505841919507" expanded="false" signature="1342:1691" ph="..." />
-                <marker date="1505841919507" expanded="true" signature="1714:2816" ph="..." />
-                <marker date="1505841919507" expanded="true" signature="6124:6639" ph="..." />
-                <marker date="1505841919507" expanded="true" signature="6124:6697" ph="..." />
-                <marker date="1505841919507" expanded="true" signature="7884:8029" ph="..." />
-                <marker date="1505841919507" expanded="true" signature="9915:11110" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ImageRecon_classes.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ImageRecon_classes.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ImageRecon_classes.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1">
-              <caret line="404" column="28" lean-forward="false" selection-start-line="404" selection-start-column="28" selection-end-line="404" selection-end-column="28" />
+            <state relative-caret-position="325">
+              <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
               <folding>
-                <element signature="e#6467#6599#0" expanded="false" />
-                <element signature="e#6758#8454#0" expanded="false" />
-                <element signature="e#8577#9721#0" expanded="false" />
-                <element signature="e#9793#10230#0" expanded="false" />
-                <element signature="e#12241#17845#0" expanded="false" />
+                <element signature="e#6566#6698#0" expanded="false" />
+                <element signature="e#6857#8553#0" expanded="false" />
+                <element signature="e#8676#9820#0" expanded="false" />
+                <element signature="e#9892#10329#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -57,27 +40,29 @@
       <file leaf-file-name="L2.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/L2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="3" column="25" lean-forward="false" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
+            <state relative-caret-position="50">
+              <caret line="2" column="11" lean-forward="false" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="utilities.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/utilities.py">
+      <file leaf-file-name="joint_training.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/joint_training.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1650">
-              <caret line="185" column="71" lean-forward="false" selection-start-line="185" selection-start-column="71" selection-end-line="185" selection-end-column="71" />
-              <folding>
-                <element signature="e#0#38#0" expanded="true" />
-                <element signature="e#2869#3046#0" expanded="false" />
-                <element signature="e#4764#5288#0" expanded="false" />
-                <element signature="e#5421#7227#0" expanded="false" />
-                <element signature="e#5452#6089#0" expanded="false" />
-                <element signature="e#6126#6658#0" expanded="false" />
-                <element signature="e#6695#7227#0" expanded="false" />
-              </folding>
+            <state relative-caret-position="450">
+              <caret line="18" column="16" lean-forward="true" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="adverserial.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/adverserial.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="50">
+              <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -121,10 +106,12 @@
         <option value="$PROJECT_DIR$/Classifier.py" />
         <option value="$PROJECT_DIR$/Visualization.py" />
         <option value="$PROJECT_DIR$/ImageRecon.py" />
-        <option value="$PROJECT_DIR$/L2.py" />
         <option value="$PROJECT_DIR$/old/ImageRecon.py" />
         <option value="$PROJECT_DIR$/utilities.py" />
         <option value="$PROJECT_DIR$/ImageRecon_classes.py" />
+        <option value="$PROJECT_DIR$/adverserial.py" />
+        <option value="$PROJECT_DIR$/L2.py" />
+        <option value="$PROJECT_DIR$/joint_training.py" />
       </list>
     </option>
   </component>
@@ -177,60 +164,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="DeepInverseProblems" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DeepInverseProblems" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DeepInverseProblems" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Data" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DeepInverseProblems" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DeepInverseProblems" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Data" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Adverserial_Loss" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DeepInverseProblems" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DeepInverseProblems" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Data" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Adverserial_Loss" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Pics" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -450,6 +383,14 @@
       <option name="presentableId" value="Default" />
       <updated>1498131365732</updated>
     </task>
+    <task id="LOCAL-00001" summary="bug fixed in adverserial network">
+      <created>1505844070057</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1505844070057</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -471,9 +412,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="-11" width="1942" height="1042" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26054054" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26054054" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287841" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287841" sideWeight="0.50208336" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="SLIDING" type="WINDOWED" visible="true" show_stripe_button="true" weight="0.34739456" sideWeight="0.49791667" order="5" side_tool="false" content_ui="tabs" x="1920" y="34" width="1920" height="986" />
@@ -496,6 +436,10 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="bug fixed in adverserial network" />
+    <option name="LAST_COMMIT_MESSAGE" value="bug fixed in adverserial network" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <option name="time" value="21" />
@@ -503,32 +447,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Classifier.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1500">
-          <caret line="68" column="0" lean-forward="false" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#38#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utilities.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1400">
-          <caret line="65" column="0" lean-forward="false" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-            <element signature="e#2869#3046#0" expanded="false" />
-            <element signature="e#4764#5288#0" expanded="false" />
-            <element signature="e#5421#7227#0" expanded="false" />
-            <element signature="e#5452#6089#0" expanded="false" />
-            <element signature="e#6126#6658#0" expanded="false" />
-            <element signature="e#6695#7227#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/old/ImageRecon.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -755,32 +673,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/old/ImageRecon.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="558">
-          <caret line="275" column="68" lean-forward="false" selection-start-line="275" selection-start-column="68" selection-end-line="275" selection-end-column="68" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-            <element signature="e#5607#5983#0" expanded="false" />
-            <marker date="1505841919507" expanded="true" signature="1074:1243" ph="..." />
-            <marker date="1505841919507" expanded="false" signature="1342:1691" ph="..." />
-            <marker date="1505841919507" expanded="true" signature="1714:2816" ph="..." />
-            <marker date="1505841919507" expanded="true" signature="6124:6639" ph="..." />
-            <marker date="1505841919507" expanded="true" signature="6124:6697" ph="..." />
-            <marker date="1505841919507" expanded="true" signature="7884:8029" ph="..." />
-            <marker date="1505841919507" expanded="true" signature="9915:11110" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/L2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="3" column="25" lean-forward="false" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Data/Adverserial_Loss/Pics/Iteration_25.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -802,17 +694,58 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/old/ImageRecon.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2808">
+          <caret line="275" column="68" lean-forward="false" selection-start-line="275" selection-start-column="68" selection-end-line="275" selection-end-column="68" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+            <element signature="e#5607#5983#0" expanded="false" />
+            <marker date="1505841919507" expanded="true" signature="1074:1243" ph="..." />
+            <marker date="1505841919507" expanded="false" signature="1342:1691" ph="..." />
+            <marker date="1505841919507" expanded="true" signature="1714:2816" ph="..." />
+            <marker date="1505841919507" expanded="true" signature="6124:6639" ph="..." />
+            <marker date="1505841919507" expanded="true" signature="6124:6697" ph="..." />
+            <marker date="1505841919507" expanded="true" signature="7884:8029" ph="..." />
+            <marker date="1505841919507" expanded="true" signature="9915:11110" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/ImageRecon_classes.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1">
-          <caret line="404" column="28" lean-forward="false" selection-start-line="404" selection-start-column="28" selection-end-line="404" selection-end-column="28" />
+        <state relative-caret-position="325">
+          <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
           <folding>
-            <element signature="e#6467#6599#0" expanded="false" />
-            <element signature="e#6758#8454#0" expanded="false" />
-            <element signature="e#8577#9721#0" expanded="false" />
-            <element signature="e#9793#10230#0" expanded="false" />
-            <element signature="e#12241#17845#0" expanded="false" />
+            <element signature="e#6566#6698#0" expanded="false" />
+            <element signature="e#6857#8553#0" expanded="false" />
+            <element signature="e#8676#9820#0" expanded="false" />
+            <element signature="e#9892#10329#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/L2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="11" lean-forward="false" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/joint_training.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="18" column="16" lean-forward="true" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/adverserial.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
