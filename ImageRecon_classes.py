@@ -268,6 +268,7 @@ class l2(object):
         plt.title('NN reconstruction')
         plot_dir = 'Data/'+ self.model_name + '/Pics/' + 'Iteration_' + str(iteration) + '.png'
         plt.savefig(plot_dir)
+        plt.close()
 
     # methode to evaluate model performance while training:
     def evaluate(self):
@@ -320,7 +321,7 @@ class Classification_Loss(l2):
         return ut.classifier_model(input, weights, 0.0)
 
     def __init__(self):
-        super(JointTraining, self).__init__(final=False)
+        super(Classification_Loss, self).__init__(final=False)
 
         self.labels = tf.placeholder(shape=[None], dtype=tf.float32, name='CorrectLabels')
         self.ohl = tf.one_hot(tf.cast(self.labels, tf.int32), depth=10)
