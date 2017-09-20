@@ -2,8 +2,320 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="66148222-bfde-4998-a425-d4226887e3de" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/Adverserial_Loss/Saves/model-1100.data-00000-of-00001" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/Adverserial_Loss/Saves/model-1100.index" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/Adverserial_Loss/Saves/model-1100.meta" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_3020.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_3030.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_3040.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_3050.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_3060.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_3070.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_3080.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_3090.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_3100.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_3110.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_3120.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_3130.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_3140.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_3150.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_3160.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_3170.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_3180.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_3190.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_3200.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_3210.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_3220.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_3230.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_3240.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_3250.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_3260.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_3270.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_3280.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_3290.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_3300.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_3310.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_3320.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_3330.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_3340.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_3350.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_3360.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_3370.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_3380.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_3390.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_3400.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_3410.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_3420.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_3430.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_3440.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_3450.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_3460.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_3470.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_3480.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_3490.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_3500.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_3510.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_3520.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_3530.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_3540.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_3550.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_3560.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_3570.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_3580.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_3590.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_3600.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_3610.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_3620.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_3630.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_3640.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_3650.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_3660.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_3670.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_3680.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_3690.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_3700.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_3710.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_3720.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_3730.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_3740.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_3750.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_3760.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_3770.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_3780.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_3790.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_3800.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_3810.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_3820.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_3830.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_3840.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_3850.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_3860.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_3870.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_3880.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_3890.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_3900.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_3910.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_3920.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_3930.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_3940.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_3950.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_3960.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_3970.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_3980.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_3990.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_4000.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_4010.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_4020.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_4030.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_4040.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_4050.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_4060.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_4070.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_4080.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_4090.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_4100.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_4110.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_4120.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_4130.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_4140.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_4150.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_4160.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_4170.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_4180.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_4190.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_4200.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_4210.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_4220.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_4230.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_4240.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_4250.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_4260.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_4270.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_4280.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_4290.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_4300.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_4310.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_4320.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_4330.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_4340.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_4350.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_4360.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_4370.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_4380.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_4390.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_4400.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_4410.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_4420.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_4430.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_4440.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_4450.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_4460.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_4470.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_4480.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_4490.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_4500.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_4510.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_4520.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_4530.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_4540.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_4550.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_4560.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_4570.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_4580.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_4590.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_4600.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_4610.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_4620.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_4630.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_4640.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_4650.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_4660.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_4670.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_4680.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_4690.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_4700.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_4710.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_4720.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_4730.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_4740.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_4750.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_4760.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_4770.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_4780.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_4790.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_4800.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_4810.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_4820.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_4830.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_4840.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_4850.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_4860.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_4870.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_4880.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_4890.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_4900.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_4910.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_4920.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_4930.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_4940.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_4950.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_4960.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_4970.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_4980.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_4990.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_5000.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_5010.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_5020.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_5030.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_5040.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_5050.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_5060.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_5070.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_5080.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_5090.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_5100.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_5110.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_5120.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_5130.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_5140.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_5150.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_5160.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_5170.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_5180.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_5190.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_5200.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_5210.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_5220.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_5230.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_5240.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_5250.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_5260.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_5270.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_5280.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_5290.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_5300.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_5310.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_5320.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_5330.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_5340.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_5350.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_5360.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_5370.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_5380.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_5390.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_5400.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_5410.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_5420.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_5430.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_5440.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_5450.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_5460.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_5470.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_5480.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_5490.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_5500.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_5510.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_5520.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_5530.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_5540.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_5550.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_5560.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_5570.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_5580.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_5590.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_5600.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_5610.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_5620.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_5630.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_5640.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_5650.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_5660.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_5670.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_5680.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_5690.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_5700.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_5710.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_5720.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_5730.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_5740.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_5750.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_5760.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_5770.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_5780.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_5790.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_5800.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_5810.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_5820.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_5830.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_5840.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_5850.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_5860.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_5870.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_5880.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_5890.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_5900.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_5910.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_5920.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_5930.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_5940.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_5950.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_5960.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_5970.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_5980.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_5990.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Saves/model-4000.data-00000-of-00001" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Saves/model-4000.index" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Saves/model-4000.meta" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Saves/model-6000.data-00000-of-00001" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Saves/model-6000.index" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Saves/model-6000.meta" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_3000.png" afterPath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_3000.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_3010.png" afterPath="$PROJECT_DIR$/Data/JointlyTrained/Pics/Iteration_3010.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ImageRecon_classes.py" afterPath="$PROJECT_DIR$/ImageRecon_classes.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/Adverserial_Loss/Saves/checkpoint" afterPath="$PROJECT_DIR$/Data/Adverserial_Loss/Saves/checkpoint" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/JointlyTrained/Saves/checkpoint" afterPath="$PROJECT_DIR$/Data/JointlyTrained/Saves/checkpoint" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adverserial.py" afterPath="$PROJECT_DIR$/adverserial.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/joint_training.py" afterPath="$PROJECT_DIR$/joint_training.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -15,11 +327,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file leaf-file-name="ImageRecon_classes.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ImageRecon_classes.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ImageRecon_classes.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="227">
-              <caret line="148" column="78" lean-forward="false" selection-start-line="148" selection-start-column="74" selection-end-line="148" selection-end-column="78" />
+            <state relative-caret-position="-550">
+              <caret line="427" column="4" lean-forward="false" selection-start-line="427" selection-start-column="4" selection-end-line="427" selection-end-column="33" />
               <folding>
                 <element signature="e#6566#6698#0" expanded="false" />
                 <element signature="e#6857#8553#0" expanded="false" />
@@ -40,11 +352,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="joint_training.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="joint_training.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/joint_training.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="14" column="9" lean-forward="true" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
+            <state relative-caret-position="675">
+              <caret line="27" column="51" lean-forward="false" selection-start-line="27" selection-start-column="51" selection-end-line="27" selection-end-column="51" />
               <folding />
             </state>
           </provider>
@@ -53,8 +365,8 @@
       <file leaf-file-name="adverserial.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/adverserial.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="9" column="30" lean-forward="false" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
+            <state relative-caret-position="200">
+              <caret line="8" column="30" lean-forward="false" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -103,9 +415,10 @@
         <option value="$PROJECT_DIR$/old/ImageRecon.py" />
         <option value="$PROJECT_DIR$/utilities.py" />
         <option value="$PROJECT_DIR$/L2.py" />
-        <option value="$PROJECT_DIR$/adverserial.py" />
-        <option value="$PROJECT_DIR$/joint_training.py" />
         <option value="$PROJECT_DIR$/ImageRecon_classes.py" />
+        <option value="$PROJECT_DIR$/joint_training.py" />
+        <option value="$PROJECT_DIR$/adverserial.py" />
+        <option value="$PROJECT_DIR$/Data/Adverserial_Loss/Saves/checkpoint" />
       </list>
     </option>
   </component>
@@ -149,6 +462,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -175,9 +489,48 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DeepInverseProblems" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DeepInverseProblems" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Adverserial_Loss" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Saves" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DeepInverseProblems" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DeepInverseProblems" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Adverserial_Loss" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -207,7 +560,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.adverserial">
+  <component name="RunManager" selected="Python.joint_training">
     <configuration default="false" name="ImageRecon" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -372,8 +725,8 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.adverserial" />
-        <item index="1" class="java.lang.String" itemvalue="Python.joint_training" />
+        <item index="0" class="java.lang.String" itemvalue="Python.joint_training" />
+        <item index="1" class="java.lang.String" itemvalue="Python.adverserial" />
         <item index="2" class="java.lang.String" itemvalue="Python.L2" />
         <item index="3" class="java.lang.String" itemvalue="Python.ImageRecon" />
         <item index="4" class="java.lang.String" itemvalue="Python.Visualization" />
@@ -440,7 +793,14 @@
       <option name="project" value="LOCAL" />
       <updated>1505860207057</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="bug fixed">
+      <created>1505860395130</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1505860395130</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -464,7 +824,7 @@
     <frame x="-11" y="-11" width="1942" height="1042" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26054054" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26540542" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287841" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287841" sideWeight="0.50208336" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="SLIDING" type="WINDOWED" visible="true" show_stripe_button="true" weight="0.34739456" sideWeight="0.49791667" order="5" side_tool="false" content_ui="tabs" x="1920" y="34" width="1920" height="986" />
@@ -495,7 +855,8 @@
     <MESSAGE value="preperation for overnight calculation" />
     <MESSAGE value="some saves deleted" />
     <MESSAGE value="overnight calculation prepared" />
-    <option name="LAST_COMMIT_MESSAGE" value="overnight calculation prepared" />
+    <MESSAGE value="bug fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="bug fixed" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -504,31 +865,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/old/ImageRecon.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-            <element signature="e#5607#5983#0" expanded="false" />
-            <marker date="1505841919507" expanded="true" signature="1074:1243" ph="..." />
-            <marker date="1505841919507" expanded="false" signature="1342:1691" ph="..." />
-            <marker date="1505841919507" expanded="true" signature="1714:2816" ph="..." />
-            <marker date="1505841919507" expanded="true" signature="6124:6639" ph="..." />
-            <marker date="1505841919507" expanded="true" signature="6124:6697" ph="..." />
-            <marker date="1505841919507" expanded="true" signature="7884:8029" ph="..." />
-            <marker date="1505841919507" expanded="true" signature="9915:11110" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Classifier.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1500">
           <caret line="68" column="0" lean-forward="false" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#38#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -536,15 +876,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1400">
           <caret line="65" column="0" lean-forward="false" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-            <element signature="e#2869#3046#0" expanded="false" />
-            <element signature="e#4764#5288#0" expanded="false" />
-            <element signature="e#5421#7227#0" expanded="false" />
-            <element signature="e#5452#6089#0" expanded="false" />
-            <element signature="e#6126#6658#0" expanded="false" />
-            <element signature="e#6695#7227#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -552,17 +883,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="6700">
           <caret line="268" column="33" lean-forward="false" selection-start-line="268" selection-start-column="33" selection-end-line="268" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-            <element signature="e#5607#5983#0" expanded="false" />
-            <marker date="1505841919507" expanded="true" signature="1074:1243" ph="..." />
-            <marker date="1505841919507" expanded="false" signature="1342:1691" ph="..." />
-            <marker date="1505841919507" expanded="true" signature="1714:2816" ph="..." />
-            <marker date="1505841919507" expanded="true" signature="6124:6639" ph="..." />
-            <marker date="1505841919507" expanded="true" signature="6124:6697" ph="..." />
-            <marker date="1505841919507" expanded="true" signature="7884:8029" ph="..." />
-            <marker date="1505841919507" expanded="true" signature="9915:11110" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -570,15 +890,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1400">
           <caret line="65" column="0" lean-forward="true" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-            <element signature="e#2869#3046#0" expanded="false" />
-            <element signature="e#4764#5288#0" expanded="false" />
-            <element signature="e#5421#7227#0" expanded="false" />
-            <element signature="e#5452#6089#0" expanded="false" />
-            <element signature="e#6126#6658#0" expanded="false" />
-            <element signature="e#6695#7227#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -586,9 +897,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1700">
           <caret line="76" column="0" lean-forward="true" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#38#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -596,17 +904,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4725">
           <caret line="198" column="24" lean-forward="false" selection-start-line="198" selection-start-column="24" selection-end-line="198" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-            <element signature="e#5607#5983#0" expanded="false" />
-            <marker date="1505841919507" expanded="true" signature="1074:1243" ph="..." />
-            <marker date="1505841919507" expanded="false" signature="1342:1691" ph="..." />
-            <marker date="1505841919507" expanded="true" signature="1714:2816" ph="..." />
-            <marker date="1505841919507" expanded="true" signature="6124:6639" ph="..." />
-            <marker date="1505841919507" expanded="true" signature="6124:6697" ph="..." />
-            <marker date="1505841919507" expanded="true" signature="7884:8029" ph="..." />
-            <marker date="1505841919507" expanded="true" signature="9915:11110" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -614,9 +911,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2650">
           <caret line="106" column="0" lean-forward="false" selection-start-line="106" selection-start-column="0" selection-end-line="106" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#38#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -633,17 +927,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="600">
           <caret line="24" column="40" lean-forward="true" selection-start-line="24" selection-start-column="40" selection-end-line="24" selection-end-column="40" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-            <element signature="e#5607#5983#0" expanded="false" />
-            <marker date="1505841919507" expanded="true" signature="1074:1243" ph="..." />
-            <marker date="1505841919507" expanded="false" signature="1342:1691" ph="..." />
-            <marker date="1505841919507" expanded="true" signature="1714:2816" ph="..." />
-            <marker date="1505841919507" expanded="true" signature="6124:6639" ph="..." />
-            <marker date="1505841919507" expanded="true" signature="6124:6697" ph="..." />
-            <marker date="1505841919507" expanded="true" signature="7884:8029" ph="..." />
-            <marker date="1505841919507" expanded="true" signature="9915:11110" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -694,60 +977,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="25">
           <caret line="13" column="20" lean-forward="false" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#38#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Data/Adverserial_Loss/Pics/Iteration_30.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Data/Adverserial_Loss/Pics/Iteration_20.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Data/Adverserial_Loss/Pics/Iteration_0.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Data/Adverserial_Loss/Pics/Iteration_5.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Data/Adverserial_Loss/Pics/Iteration_10.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Data/Adverserial_Loss/Pics/Iteration_15.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Data/Adverserial_Loss/Pics/Iteration_25.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Data/Adverserial_Loss/Pics/Iteration_30.png" />
+    <entry file="file://$PROJECT_DIR$/Data/Adverserial_Loss/Pics/Iteration_20.png" />
+    <entry file="file://$PROJECT_DIR$/Data/Adverserial_Loss/Pics/Iteration_0.png" />
+    <entry file="file://$PROJECT_DIR$/Data/Adverserial_Loss/Pics/Iteration_5.png" />
+    <entry file="file://$PROJECT_DIR$/Data/Adverserial_Loss/Pics/Iteration_10.png" />
+    <entry file="file://$PROJECT_DIR$/Data/Adverserial_Loss/Pics/Iteration_15.png" />
+    <entry file="file://$PROJECT_DIR$/Data/Adverserial_Loss/Pics/Iteration_25.png" />
     <entry file="file://$PROJECT_DIR$/utilities.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1650">
           <caret line="185" column="71" lean-forward="false" selection-start-line="185" selection-start-column="71" selection-end-line="185" selection-end-column="71" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-            <element signature="e#2869#3046#0" expanded="false" />
-            <element signature="e#4764#5288#0" expanded="false" />
-            <element signature="e#5421#7227#0" expanded="false" />
-            <element signature="e#5452#6089#0" expanded="false" />
-            <element signature="e#6126#6658#0" expanded="false" />
-            <element signature="e#6695#7227#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -755,16 +998,18 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2808">
           <caret line="275" column="68" lean-forward="false" selection-start-line="275" selection-start-column="68" selection-end-line="275" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ImageRecon_classes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-550">
+          <caret line="427" column="4" lean-forward="false" selection-start-line="427" selection-start-column="4" selection-end-line="427" selection-end-column="33" />
           <folding>
-            <element signature="e#0#38#0" expanded="true" />
-            <element signature="e#5607#5983#0" expanded="false" />
-            <marker date="1505841919507" expanded="true" signature="1074:1243" ph="..." />
-            <marker date="1505841919507" expanded="false" signature="1342:1691" ph="..." />
-            <marker date="1505841919507" expanded="true" signature="1714:2816" ph="..." />
-            <marker date="1505841919507" expanded="true" signature="6124:6639" ph="..." />
-            <marker date="1505841919507" expanded="true" signature="6124:6697" ph="..." />
-            <marker date="1505841919507" expanded="true" signature="7884:8029" ph="..." />
-            <marker date="1505841919507" expanded="true" signature="9915:11110" ph="..." />
+            <element signature="e#6566#6698#0" expanded="false" />
+            <element signature="e#6857#8553#0" expanded="false" />
+            <element signature="e#8676#9820#0" expanded="false" />
+            <element signature="e#9892#10329#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -777,32 +1022,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Data/Adverserial_Loss/Saves/checkpoint">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="36" lean-forward="false" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/adverserial.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="9" column="30" lean-forward="false" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
+        <state relative-caret-position="200">
+          <caret line="8" column="30" lean-forward="false" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/joint_training.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="14" column="9" lean-forward="true" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
+        <state relative-caret-position="675">
+          <caret line="27" column="51" lean-forward="false" selection-start-line="27" selection-start-column="51" selection-end-line="27" selection-end-column="51" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ImageRecon_classes.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="148" column="78" lean-forward="false" selection-start-line="148" selection-start-column="74" selection-end-line="148" selection-end-column="78" />
-          <folding>
-            <element signature="e#6566#6698#0" expanded="false" />
-            <element signature="e#6857#8553#0" expanded="false" />
-            <element signature="e#8676#9820#0" expanded="false" />
-            <element signature="e#9892#10329#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
