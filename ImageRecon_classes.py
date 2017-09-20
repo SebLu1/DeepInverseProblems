@@ -103,6 +103,8 @@ class l2(object):
         self.x_true = tf.placeholder(shape=[None, self.pic_size, self.pic_size, 1], dtype=tf.float32, name='GroundTruth')
         self.y = tf.placeholder(shape=[None, self.ray_transf.range.shape[0], self.ray_transf.range.shape[1], 1], dtype=tf.float32,
                            name='Measurement_Data')
+        self.labels = tf.placeholder(shape=[None], dtype=tf.float32, name='CorrectLabels')
+        self.ohl = tf.one_hot(tf.cast(self.labels, tf.int32), depth=10)
 
         # set up the forward model
         x = self.x_ini
@@ -297,6 +299,11 @@ class l2(object):
                                                         self.y: y_np})
         self.save()
 
+    def compute_data(self, x_ini, x_true, y, label):
+        return self.sess.run(self.result, feed_dict={self.x_ini: x_ini, self.x_true: x_true,
+                                                    self.y: y, self.labels: label})
+
+
 
 class Classification_Loss(l2):
     weightL2_combinedNorms = 0
@@ -323,8 +330,6 @@ class Classification_Loss(l2):
     def __init__(self):
         super(Classification_Loss, self).__init__(final=False)
 
-        self.labels = tf.placeholder(shape=[None], dtype=tf.float32, name='CorrectLabels')
-        self.ohl = tf.one_hot(tf.cast(self.labels, tf.int32), depth=10)
         # extend forward model by classifier
         self.weights_classifier = self.get_classifier_weights()
         self.clas_result = self.classifier_model(self.result, self.weights_classifier)
@@ -420,6 +425,15 @@ class Classification_Loss(l2):
             self.sess.run(self.optimizer_joint, feed_dict={self.x_ini: x_ini_np, self.x_true: x_true_np,
                                                         self.y: y_np, self.labels: lab_np})
         self.save()
+
+    def full_model_evaluation(self, x_ini, x_true, y, label):
+        pic, loss_l2, CE, acc = self.sess.run(
+            [self.result, self.lossL2, self.lossClas, self.eval_metric],
+            feed_dict={self.x_ini: x_ini, self.x_true: x_true,
+                       self.y: y, self.labels: label})
+        return pic, loss_l2, CE, acc
+
+
 
 
 class Adverserial(l2):
