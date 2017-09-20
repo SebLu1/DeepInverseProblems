@@ -24,7 +24,7 @@ class l2(object):
     iterations = 5
 
     # further parameters
-    photons_per_unit = 30
+    photons_per_unit = 60
     attenuation_coeff = 0.2
     pic_size = 28
 
