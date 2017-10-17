@@ -90,15 +90,15 @@ if __name__ == '__main__':
     # pretraining the models for L2 loss
     if 1:
         recon = Loss_Class()
-        recon.train_class_loss(training_steps)
+        recon.train_L2(training_steps)
         recon.end()
 
         recon2 = Loss_Jointly()
-        recon2.train_jointly(training_steps)
+        recon2.train_L2(training_steps)
         recon2.end()
 
         recon3 = Train_Classifier_Only()
-        recon3.train_classifier_only(training_steps)
+        recon3.train_L2(training_steps)
         recon3.end()
 
         recon4 = Loss_L2()
