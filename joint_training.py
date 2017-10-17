@@ -17,7 +17,7 @@ class Loss_Jointly(ir.Classification_Loss):
 class Train_Classifier_Only(ir.Classification_Loss):
     model_name = 'TrainClassifierOnly'
 
-def compare_class_pref():
+def compare_class_perf():
     # created needed folder
     if not os.path.exists('Data/Evaluations/Comparison_Classification'):
         try:
@@ -29,19 +29,23 @@ def compare_class_pref():
     CE = np.zeros(shape=[4])
     acc = np.zeros(shape=[4])
     pics = np.zeros(shape=[4, 28, 28])
+
     rec = Loss_L2()
     x_ini, x_true, y, label = rec.simulated_measurements(2000, validation_data=True)
     image, l2Loss[0], CE[0], acc[0] = rec.full_model_evaluation(x_ini, x_true, y, label)
     pics[0,...] = image[0,...,0]
     rec.end()
+
     rec = Loss_Class()
     image, l2Loss[1], CE[1], acc[1] = rec.full_model_evaluation(x_ini, x_true, y, label)
     pics[1,...] = image[0,...,0]
     rec.end()
+
     rec = Loss_Jointly()
     image, l2Loss[3], CE[3], acc[3] = rec.full_model_evaluation(x_ini, x_true, y, label)
     pics[3,...] = image[0,...,0]
     rec.end()
+
     rec = Train_Classifier_Only()
     image, l2Loss[2], CE[2], acc[2] = rec.full_model_evaluation(x_ini, x_true, y, label)
     pics[2,...] = image[0,...,0]
@@ -82,11 +86,29 @@ def compare_class_pref():
 
 
 if __name__ == '__main__':
-
-    training_steps = 1000
+    training_steps = 1500
+    # pretraining the models for L2 loss
     if 1:
         recon = Loss_Class()
-        recon.train_class_loss(training_steps=training_steps)
+        recon.train_class_loss(training_steps)
+        recon.end()
+
+        recon2 = Loss_Jointly()
+        recon2.train_jointly(training_steps)
+        recon2.end()
+
+        recon3 = Train_Classifier_Only()
+        recon3.train_classifier_only(training_steps)
+        recon3.end()
+
+        recon4 = Loss_L2()
+        recon4.train_L2(training_steps)
+        recon4.end()
+
+    training_steps = 3000
+    if 1:
+        recon = Loss_Class()
+        recon.train_class_loss(training_steps)
         recon.end()
 
     if 1:
@@ -104,4 +126,4 @@ if __name__ == '__main__':
         recon4.train_L2(training_steps)
         recon4.end()
 
-    compare_class_pref()
+    compare_class_perf()

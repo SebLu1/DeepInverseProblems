@@ -303,8 +303,6 @@ class l2(object):
         return self.sess.run(self.result, feed_dict={self.x_ini: x_ini, self.x_true: x_true,
                                                     self.y: y, self.labels: label})
 
-
-
 class Classification_Loss(l2):
     weightL2_combinedNorms = 0
     model_name = 'Classification_Loss'
@@ -432,8 +430,6 @@ class Classification_Loss(l2):
             feed_dict={self.x_ini: x_ini, self.x_true: x_true,
                        self.y: y, self.labels: label})
         return pic, loss_l2, CE, acc
-
-
 
 
 class Adverserial(l2):
