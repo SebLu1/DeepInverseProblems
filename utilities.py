@@ -56,7 +56,7 @@ def classifier_model(input, weights, keep_prob):
         drop = tf.layers.dropout(dense, rate=keep_prob)
 
         # logits
-        output = tf.nn.relu(tf.matmul(drop, weights[6]) + weights[7])
+        output = tf.matmul(drop, weights[6]) + weights[7]
     return output
 
 def restore_save(sess, variables):

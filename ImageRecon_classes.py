@@ -1,6 +1,3 @@
-from __future__ import absolute_import
-from __future__ import division
-from __future__ import print_function
 import tensorflow as tf
 import numpy as np
 import odl
@@ -140,8 +137,6 @@ class l2(object):
         # finish setup. Should always be executed unless this init is called in an init of a subclass
         if final:
             self.finish_setup()
-
-
 
     def finish_setup(self):
         # merge training log
@@ -331,6 +326,11 @@ class Classification_Loss(l2):
         # extend forward model by classifier
         self.weights_classifier = self.get_classifier_weights()
         self.clas_result = self.classifier_model(self.result, self.weights_classifier)
+        self.probabilities = tf.nn.softmax(self.clas_result)
+
+        # Accuracy on fbp for comparioson
+        self.fbp_clas = self.classifier_model(self.x_ini, self.weights_classifier)
+        self.fbp_probabilities = tf.nn.softmax(self.fbp_clas)
 
         # define classification evaluation
         with tf.name_scope('Evaluierer'):
@@ -362,6 +362,63 @@ class Classification_Loss(l2):
                                                                                                 global_step=self.global_step,
                                                                                                 var_list=self.weights_classifier)
         self.finish_setup()
+
+    # Visualization as required by Ozan
+    def ozan_vis(self, iterations):
+        for i in range(iterations):
+            x_ini_np, x_true_np, y_np, lab_np = self.simulated_measurements(1)
+            labels, output_pic, output_labels, fbp_clas = self.sess.run(
+                [self.ohl, self.result, self.probabilities, self.fbp_probabilities],
+                feed_dict={self.x_ini: x_ini_np, self.x_true: x_true_np,
+                           self.y: y_np, self.labels: lab_np})
+            true_labels = []
+            for k in range(len(labels[0])):
+                true_labels.append([labels[0][k]])
+            recon_labels = []
+            for k in range(len(output_labels[0])):
+                recon_labels.append([output_labels[0][k]])
+            fbp_labels = []
+            for k in range(len(fbp_clas[0])):
+                fbp_labels.append([fbp_clas[0][k]])
+            columns = ('Probability')
+            rowLabels = ('0', '1', '2', '3', '4', '5', '6', '7', '8', '9')
+
+            # true figure
+            plt.figure(1)
+            plt.imshow(x_true_np[0,...,0], cmap='gray')
+            plt.axis('off')
+            # Add a table at the bottom of the axes
+            plt.table(cellText=true_labels,
+                      rowLabels=rowLabels,
+                      colLabels=columns,
+                      loc='bottom')
+            plt.savefig('Data/Evaluations/' + self.model_name + '_True_' + str(i) + '.png', bbox_inches='tight')
+            plt.close()
+
+            # reconstructed figure
+            plt.figure(2)
+            plt.imshow(output_pic[0,...,0], cmap='gray')
+            plt.axis('off')
+            # Add a table at the bottom of the axes
+            plt.table(cellText=recon_labels,
+                      rowLabels=rowLabels,
+                      colLabels=columns,
+                      loc='bottom')
+            plt.savefig('Data/Evaluations/' + self.model_name + '_Reconstruction_'+ str(i) + '.png', bbox_inches='tight')
+            plt.close()
+
+            # fbp figure
+            plt.figure(3)
+            plt.imshow(x_ini_np[0,...,0], cmap='gray')
+            plt.axis('off')
+            # Add a table at the bottom of the axes
+            plt.table(cellText=fbp_labels,
+                      rowLabels=rowLabels,
+                      colLabels=columns,
+                      loc='bottom')
+            plt.savefig('Data/Evaluations/' + self.model_name + '_FBP_' + str(i) + '.png', bbox_inches='tight')
+            plt.close()
+
 
     # change inherited methode to include CE and classification acc
     def evaluate(self):

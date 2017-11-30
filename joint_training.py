@@ -84,11 +84,10 @@ def compare_class_perf():
 
     plt.savefig('Data/Evaluations/Comparison_Classification/result')
 
-
 if __name__ == '__main__':
     training_steps = 1500
     # pretraining the models for L2 loss
-    if 1:
+    if 0:
         recon = Loss_Class()
         recon.train_L2(training_steps)
         recon.end()
@@ -106,24 +105,39 @@ if __name__ == '__main__':
         recon4.end()
 
     training_steps = 3000
-    if 1:
+    if 0:
         recon = Loss_Class()
         recon.train_class_loss(training_steps)
         recon.end()
 
-    if 1:
         recon2 = Loss_Jointly()
         recon2.train_jointly(training_steps)
         recon2.end()
 
-    if 1:
         recon3 = Train_Classifier_Only()
         recon3.train_classifier_only(training_steps)
         recon3.end()
 
-    if 1:
         recon4 = Loss_L2()
         recon4.train_L2(training_steps)
         recon4.end()
 
-    compare_class_perf()
+    # visualizations
+    if 1:
+        recon = Loss_Class()
+        recon.ozan_vis(5)
+        recon.end()
+
+        recon = Loss_Jointly()
+        recon.ozan_vis(5)
+        recon.end()
+
+        recon = Train_Classifier_Only()
+        recon.ozan_vis(5)
+        recon.end()
+
+        recon = Loss_L2()
+        recon.ozan_vis(5)
+        recon.end()
+
+    #compare_class_perf()
