@@ -123,7 +123,7 @@ if __name__ == '__main__':
         recon4.end()
 
     # visualizations
-    if 1:
+    if 0:
         recon = Loss_Class()
         recon.ozan_vis(5)
         recon.end()
@@ -139,5 +139,21 @@ if __name__ == '__main__':
         recon = Loss_L2()
         recon.ozan_vis(5)
         recon.end()
+
+    # run this for a bunch of different values of the weighting parameter C
+    C_list = [10**-4, 10**-3, 10**-2, 10**-1, 1]
+    for C in C_list:
+        class JointTrainingWithC(ir.Classification_Loss):
+            model_name = 'JointlyTrained_C' + str(C)
+            weightL2_combinedNorms = C
+
+        recon = JointTrainingWithC()
+        recon.train_L2(15000)
+        recon.train_jointly(30000)
+        recon.end()
+
+
+
+
 
     #compare_class_perf()

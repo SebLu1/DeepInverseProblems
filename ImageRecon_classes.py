@@ -16,7 +16,7 @@ import utilities as ut
 class l2(object):
     #training hyperparameter set
     model_name = 'L2_training'
-    learning_rate = 0.001
+    learning_rate = 0.0001
     batch_size = 64
     iterations = 5
 
@@ -489,88 +489,5 @@ class Classification_Loss(l2):
         return pic, loss_l2, CE, acc
 
 
-class Adverserial(l2):
-    model_name = 'Adverserial_Loss'
-    learning_rate_adv = 0.001
-    weightL2_combinedNorms = 0.15
-
-    def get_adverserial_weights(self):
-        return ut.adversarial_weights(self.model_name)
-
-    def adverserial_model(self, input, weights):
-        return ut.adverserial_network(input, weights, '')
-
-    def __init__(self):
-        super(Adverserial, self).__init__(final=False)
-
-        # The network for adverserial training
-        self.adv_weights = self.get_adverserial_weights()
-        scaling_factor = 1
-        self.adv_class_net = self.adverserial_model(scaling_factor*self.result, self.adv_weights)
-        self.adv_class_true = self.adverserial_model(scaling_factor*self.x_true, self.adv_weights)
-
-        # decide where to cut off the logarithm to avoid numerical instabilities
-        log_cut = 0.000000001
-        # loss of adverserial Network during training given by misclassification loss of true data and network data
-        self.loss_adv = -tf.reduce_mean(tf.log(tf.maximum(self.adv_class_true, log_cut))
-                                        + tf.log(tf.maximum(1. - self.adv_class_net, log_cut)))
-
-        # evaluation metric for classification
-        self.acc_adv = (tf.reduce_mean(tf.cast(tf.greater(0.5, self.adv_class_net), tf.float32)) +
-                        tf.reduce_mean(tf.cast(tf.greater(self.adv_class_true, 0.5), tf.float32))) / 2
-
-        # loss of the generator trying to fool the adverserial network
-        self.loss_gen = -tf.reduce_mean(tf.log(tf.maximum(self.adv_class_net, log_cut)))
-
-        # evaluation metric for generator
-        self.acc_gen = tf.reduce_mean(tf.cast(tf.greater(self.adv_class_net, 0.5), tf.float32))
-
-        # the optimizers
-        self.optimizer_adverserial = tf.train.AdamOptimizer(self.learning_rate_adv).minimize(self.loss_adv,
-                                                                                     var_list=self.adv_weights)
-        self.optimizer_generator = tf.train.AdamOptimizer(self.learning_rate).minimize(
-            self.loss_gen + self.lossL2 * self.weightL2_combinedNorms,
-            var_list=self.weights_recon,
-            global_step=self.global_step)
-
-
-        self.finish_setup()
-
-    def evaluate(self):
-        x_ini_np, x_true_np, y_np, lab_np = self.simulated_measurements(100, validation_data=True)
-        summary, step, pic, accuracy, crossE, l2loss = self.sess.run([self.merged, self.global_step, self.result,
-                                                             self.acc_gen, self.loss_gen, self.lossL2],
-                                                       feed_dict={self.x_ini: x_ini_np, self.x_true: x_true_np,
-                                                                  self.y: y_np})
-        print('Iteration:' + str(step) + ', Generator fooling perc.: ' + str(accuracy) +
-              ', CE: ' + str(crossE) + ' , L2-Loss: ' + str(l2loss))
-        self.writer.add_summary(summary, step)
-        self.save_pic(x_true_np, x_ini_np, pic, step)
-
-    def evaluate_adv_net(self):
-        x_ini_np, x_true_np, y_np, lab_np = self.simulated_measurements(100, validation_data=True)
-        out_true, out_recon, accuracy, crossE = self.sess.run([self.adv_class_true, self.adv_class_net, self.acc_adv, self.loss_adv], feed_dict={self.x_ini: x_ini_np,
-                                                                                   self.x_true: x_true_np, self.y: y_np})
-        print('Discrimination accuracy: ' + str(accuracy) +', CE: ' + str(crossE) + ', Output Net True: '
-              + str(out_true[0,0]) + ', Output Net Fake: ' + str(out_recon[0,0]))
-
-
-    def train_adv(self, training_steps, steps_gen, steps_adv):
-        # actual adverserial training
-        for j in range(training_steps):
-            # train the adverserial network to discriminate between real data and network data
-            print('Training Adverserial Network')
-            for k in range(steps_adv):
-                x_ini_np, x_true_np, y_np, lab_np = self.simulated_measurements(self.batch_size, validation_data=False)
-                self.sess.run(self.optimizer_adverserial, feed_dict={self.x_ini: x_ini_np,
-                                                                     self.x_true: x_true_np, self.y: y_np})
-            self.evaluate_adv_net()
-            print('Training Generator')
-            for k in range(steps_gen):
-                x_ini_np, x_true_np, y_np, lab_np = self.simulated_measurements(self.batch_size, validation_data=False)
-                self.sess.run(self.optimizer_generator, feed_dict={self.x_ini: x_ini_np,
-                                                                   self.x_true: x_true_np, self.y: y_np})
-            self.evaluate()
-        self.save()
 
 
