@@ -141,7 +141,7 @@ if __name__ == '__main__':
         recon.end()
 
     # run this for a bunch of different values of the weighting parameter C
-    C_list = [10**-4, 10**-3, 10**-2, 10**-1, 1]
+    C_list = [0.0001, 0.001, 0.01, 0.1, 1.0]
     for C in C_list:
         class JointTrainingWithC(ir.Classification_Loss):
             model_name = 'JointlyTrained_C' + str(C)
