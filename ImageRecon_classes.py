@@ -434,7 +434,7 @@ class Classification_Loss(l2):
               ', Net Improvement: ' + str(((original_loss.sum()) / 100) - loss_evaluation) + ', CE: '
               + str(CE) + ', Accuracy: ' + str(acc))
         self.writer.add_summary(summary, step_number)
-        self.save_pic(x_true_np, x_ini_np, picture, step_number)
+        #self.save_pic(x_true_np, x_ini_np, picture, step_number)
 
     #### to be written!
     def train_L2(self, training_steps):
