@@ -73,7 +73,7 @@ class l2(object):
         grid_endpoints = math.floor(self.pic_size / 2) + 1
         self.space = odl.uniform_discr([-grid_endpoints, -grid_endpoints], [grid_endpoints, grid_endpoints],
                                   [self.pic_size, self.pic_size],
-                                  dtype='float32', weighting='const')
+                                  dtype='float32')
         angle_partition = odl.uniform_partition(0, 2 * np.pi, 5)
         detector_partition = odl.uniform_partition(-36, 36, 25)
 

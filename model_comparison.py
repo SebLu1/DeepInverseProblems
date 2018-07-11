@@ -7,22 +7,29 @@ import matplotlib
 matplotlib.use('agg')
 import matplotlib.pyplot as plt
 
-
-
-def visualize_models():
-    if not os.path.exists('Data/Evaluations/Visual_Comparison'):
+def create_dir(path):
+    if not os.path.exists(path):
         try:
-            os.makedirs('Data/Evaluations/Visual_Comparison')
+            os.makedirs(path)
         except OSError:
             pass
-        print('Visualization directory created')
+        print(path+ ' created')
 
-    pics = np.zeros(shape=[4, 28, 28])
+
+def visualize_models(number):
+    path  = 'Data/Evaluations/Visual_Comparison' + number
+    create_dir(path)
+
     rec = L2.Loss_L2()
     x_ini, x_true, y, label = rec.simulated_measurements(1, validation_data=True)
     image = rec.compute_data(x_ini, x_true, y, label)
-    pics[0,...] = image[0,...,0]
     rec.end()
+    plt.figure(1)
+    plt.imshow(image[0,...])
+    plt.axis('off')
+    plt.title('L2')
+
+
     rec = jt.Loss_Class()
     image = rec.compute_data(x_ini, x_true, y, label)
     pics[1,...] = image[0,...,0]
