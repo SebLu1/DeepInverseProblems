@@ -430,8 +430,8 @@ class Classification_Loss(l2):
         original_loss = np.square(x_ini_np - x_true_np)
         print('Iteration: ' + str(step_number) + ', Loss: ' +
               "{0:.6g}".format(loss_evaluation) + ', Original Loss: ' + "{0:.6g}".format(
-            (original_loss.sum()) / 100) +
-              ', Net Improvement: ' + str(((original_loss.sum()) / 100) - loss_evaluation) + ', CE: '
+            np.sum(original_loss) / 100.0) +
+              ', Net Improvement: ' + str((np.sum(original_loss) / 100.0) - loss_evaluation) + ', CE: '
               + str(CE) + ', Accuracy: ' + str(acc))
         self.writer.add_summary(summary, step_number)
         #self.save_pic(x_true_np, x_ini_np, picture, step_number)
