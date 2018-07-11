@@ -16,7 +16,7 @@ import utilities as ut
 class l2(object):
     #training hyperparameter set
     model_name = 'L2_training'
-    learning_rate = 0.0001
+    learning_rate = 0.00025
     batch_size = 64
     iterations = 5
 

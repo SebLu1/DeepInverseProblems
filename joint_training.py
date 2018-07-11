@@ -148,8 +148,8 @@ if __name__ == '__main__':
             weightL2_combinedNorms = C
 
         recon = JointTrainingWithC()
-        recon.train_L2(15000)
-        recon.train_jointly(30000)
+        recon.train_L2(4000)
+        recon.train_jointly(8000)
         recon.end()
 
 
