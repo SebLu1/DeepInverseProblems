@@ -147,10 +147,13 @@ if __name__ == '__main__':
             model_name = 'JointlyTrained_C' + str(C)
             weightL2_combinedNorms = C
 
+        print('C : ' + str(C))
         recon = JointTrainingWithC()
         recon.train_L2(4000)
+        print('C : ' + str(C))
         recon.train_jointly(8000)
         recon.end()
+        print('C : ' + str(C))
 
 
 

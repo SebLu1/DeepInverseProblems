@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="66148222-bfde-4998-a425-d4226887e3de" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/test.ipynb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,8 +16,8 @@
       <file leaf-file-name="ImageRecon_classes.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ImageRecon_classes.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3667">
-              <caret line="328" column="60" lean-forward="true" selection-start-line="328" selection-start-column="60" selection-end-line="328" selection-end-column="60" />
+            <state relative-caret-position="1312">
+              <caret line="194" column="62" selection-start-line="194" selection-start-column="62" selection-end-line="194" selection-end-column="62" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
                 <element signature="e#5850#6236#0" />
@@ -38,7 +37,7 @@
         <entry file="file://$PROJECT_DIR$/joint_training.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="549">
-              <caret line="148" lean-forward="true" selection-start-line="148" selection-end-line="148" />
+              <caret line="148" selection-start-line="148" selection-end-line="148" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
                 <element signature="e#507#2639#0" />
@@ -51,7 +50,7 @@
         <entry file="file://$PROJECT_DIR$/model_comparison.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="330">
-              <caret line="27" column="28" lean-forward="true" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="28" />
+              <caret line="27" column="28" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -165,9 +164,9 @@
         <option value="$PROJECT_DIR$/utilities.py" />
         <option value="$PROJECT_DIR$/Data_Preprocessing.py" />
         <option value="$PROJECT_DIR$/model_comparison.py" />
-        <option value="$PROJECT_DIR$/ImageRecon_classes.py" />
         <option value="$PROJECT_DIR$/joint_training.py" />
         <option value="$PROJECT_DIR$/test.ipynb" />
+        <option value="$PROJECT_DIR$/ImageRecon_classes.py" />
       </list>
     </option>
   </component>
@@ -554,7 +553,21 @@
       <option name="project" value="LOCAL" />
       <updated>1531330619918</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="test bunch of values for C">
+      <created>1531331797245</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1531331797245</updated>
+    </task>
+    <task id="LOCAL-00023" summary="python 3 competability added">
+      <created>1531381834914</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1531381834914</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -578,7 +591,7 @@
     <frame x="0" y="23" width="1440" height="797" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26180556" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26180556" />
       <window_info anchor="bottom" id="TODO" order="8" weight="0.3287841" />
       <window_info anchor="bottom" id="Event Log" order="6" sideWeight="0.50208336" side_tool="true" weight="0.32780084" />
       <window_info anchor="bottom" x="573" y="371" width="627" height="225" id="Run" internal_type="SLIDING" order="5" sideWeight="0.49791667" type="WINDOWED" weight="0.34739456" />
@@ -636,7 +649,8 @@
     <MESSAGE value="bug fixed" />
     <MESSAGE value="parameter tuning" />
     <MESSAGE value="test bunch of values for C" />
-    <option name="LAST_COMMIT_MESSAGE" value="test bunch of values for C" />
+    <MESSAGE value="python 3 competability added" />
+    <option name="LAST_COMMIT_MESSAGE" value="python 3 competability added" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -730,13 +744,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test.ipynb">
-      <provider selected="true" editor-type-id="ipnb-editor">
-        <state>
-          <selected id="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/L2.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -747,14 +754,14 @@
     <entry file="file://$PROJECT_DIR$/model_comparison.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
-          <caret line="27" column="28" lean-forward="true" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="28" />
+          <caret line="27" column="28" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/joint_training.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="549">
-          <caret line="148" lean-forward="true" selection-start-line="148" selection-end-line="148" />
+          <caret line="148" selection-start-line="148" selection-end-line="148" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
             <element signature="e#507#2639#0" />
@@ -765,10 +772,17 @@
     <entry file="file://$PROJECT_DIR$/Data/ClassificationLoss/Pics/Iteration_1250.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/test.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="0" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/ImageRecon_classes.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3667">
-          <caret line="328" column="60" lean-forward="true" selection-start-line="328" selection-start-column="60" selection-end-line="328" selection-end-column="60" />
+        <state relative-caret-position="1312">
+          <caret line="194" column="62" selection-start-line="194" selection-start-column="62" selection-end-line="194" selection-end-column="62" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
             <element signature="e#5850#6236#0" />
