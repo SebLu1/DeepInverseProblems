@@ -21,7 +21,7 @@ class l2(object):
     iterations = 5
 
     # further parameters
-    photons_per_unit = 60
+    photons_per_unit = 60.0
     attenuation_coeff = 0.2
     pic_size = 28
 
@@ -192,7 +192,7 @@ class l2(object):
 
             # Add poisson noise
             noisy_data = odl.phantom.poisson_noise(measure * self.photons_per_unit) / self.photons_per_unit
-            initial_guess = self.fbp(-np.log(noisy_data + (1/self.photons_per_unit)) / self.attenuation_coeff)
+            initial_guess = self.fbp(-np.log(noisy_data + (5.0/self.photons_per_unit)) / self.attenuation_coeff)
 
             # fill in the output data
             x_ini[i,:,:,0] = initial_guess
