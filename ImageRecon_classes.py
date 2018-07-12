@@ -481,12 +481,12 @@ class Classification_Loss(l2):
                                                         self.y: y_np, self.labels: lab_np})
         self.save()
 
-    def full_model_evaluation(self, x_ini, x_true, y, label):
-        pic, loss_l2, CE, acc = self.sess.run(
-            [self.result, self.lossL2, self.lossClas, self.eval_metric],
+    def visual_model_evaluation(self, x_ini, x_true, y, label):
+        labels, output_pic, output_labels, fbp_clas = self.sess.run(
+            [self.ohl, self.result, self.probabilities, self.fbp_probabilities],
             feed_dict={self.x_ini: x_ini, self.x_true: x_true,
                        self.y: y, self.labels: label})
-        return pic, loss_l2, CE, acc
+        return labels, output_pic, output_labels, fbp_clas
 
 
 

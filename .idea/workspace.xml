@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="66148222-bfde-4998-a425-d4226887e3de" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ImageRecon_classes.py" beforeDir="false" afterPath="$PROJECT_DIR$/ImageRecon_classes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_comparison.py" beforeDir="false" afterPath="$PROJECT_DIR$/model_comparison.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -13,11 +15,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file leaf-file-name="ImageRecon_classes.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ImageRecon_classes.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ImageRecon_classes.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1312">
-              <caret line="194" column="62" selection-start-line="194" selection-start-column="62" selection-end-line="194" selection-end-column="62" />
+            <state relative-caret-position="-2545">
+              <caret line="194" column="111" selection-start-line="194" selection-start-column="37" selection-end-line="194" selection-end-column="111" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
                 <element signature="e#5850#6236#0" />
@@ -36,8 +38,8 @@
       <file leaf-file-name="joint_training.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/joint_training.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="549">
-              <caret line="148" selection-start-line="148" selection-end-line="148" />
+            <state relative-caret-position="-389">
+              <caret line="96" column="20" lean-forward="true" selection-start-line="96" selection-start-column="20" selection-end-line="96" selection-end-column="20" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
                 <element signature="e#507#2639#0" />
@@ -46,20 +48,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="model_comparison.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="model_comparison.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/model_comparison.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="27" column="28" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="L2.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/L2.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="21" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
+            <state relative-caret-position="225">
+              <caret line="91" column="82" selection-start-line="91" selection-start-column="82" selection-end-line="91" selection-end-column="82" />
+              <folding>
+                <element signature="e#384#2638#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -163,10 +159,10 @@
         <option value="$PROJECT_DIR$/adverserial.py" />
         <option value="$PROJECT_DIR$/utilities.py" />
         <option value="$PROJECT_DIR$/Data_Preprocessing.py" />
-        <option value="$PROJECT_DIR$/model_comparison.py" />
-        <option value="$PROJECT_DIR$/joint_training.py" />
         <option value="$PROJECT_DIR$/test.ipynb" />
+        <option value="$PROJECT_DIR$/joint_training.py" />
         <option value="$PROJECT_DIR$/ImageRecon_classes.py" />
+        <option value="$PROJECT_DIR$/model_comparison.py" />
       </list>
     </option>
   </component>
@@ -567,7 +563,14 @@
       <option name="project" value="LOCAL" />
       <updated>1531381834914</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="python 3 competability added">
+      <created>1531382385941</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1531382385941</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -751,24 +754,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/model_comparison.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="27" column="28" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/joint_training.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="549">
-          <caret line="148" selection-start-line="148" selection-end-line="148" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-            <element signature="e#507#2639#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Data/ClassificationLoss/Pics/Iteration_1250.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -781,8 +766,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ImageRecon_classes.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1312">
-          <caret line="194" column="62" selection-start-line="194" selection-start-column="62" selection-end-line="194" selection-end-column="62" />
+        <state relative-caret-position="-2545">
+          <caret line="194" column="111" selection-start-line="194" selection-start-column="37" selection-end-line="194" selection-end-column="111" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
             <element signature="e#5850#6236#0" />
@@ -793,6 +778,27 @@
             <element signature="e#12758#12972#0" />
             <element signature="e#13002#13269#0" />
             <element signature="e#16211#18600#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/joint_training.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-389">
+          <caret line="96" column="20" lean-forward="true" selection-start-line="96" selection-start-column="20" selection-end-line="96" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+            <element signature="e#507#2639#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model_comparison.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="91" column="82" selection-start-line="91" selection-start-column="82" selection-end-line="91" selection-end-column="82" />
+          <folding>
+            <element signature="e#384#2638#0" />
           </folding>
         </state>
       </provider>
