@@ -488,6 +488,13 @@ class Classification_Loss(l2):
                        self.y: y, self.labels: label})
         return labels, output_pic, output_labels, fbp_clas
 
+    def full_model_evaluation(self, x_ini, x_true, y, label):
+        image, l2Loss, CE, acc, total_loss = self.sess.run(
+            [self.result, self.lossL2, self.lossClas, self.eval_metric, self.lossL2Clas],
+            feed_dict={self.x_ini: x_ini, self.x_true: x_true,
+                       self.y: y, self.labels: label})
+        return image, l2Loss, CE, acc, total_loss
+
 
 
 

@@ -89,6 +89,33 @@ def visualize_models(number, model_list):
         plt.close()
         recon.end()
 
+def compare_models(model_list, batch_size = 2000):
+    path = 'Data/Evaluations/Comparison_Classification'
+    create_dir(path)
+
+    data = jt.Loss_L2()
+    x_ini, x_true, y, label = data.simulated_measurements(batch_size, validation_data=True)
+    data.end()
+
+    CE = {}
+    L2 = {}
+    acc = {}
+    tl = {}
+
+    for model in model_list:
+        recon = model()
+        name = recon.model_name
+        image, l2Loss, crossEntro, accuracy, total_loss = recon.full_model_evaluation(x_ini, x_true, y, label)
+        recon.end()
+
+        CE[name] = crossEntro
+        L2[name] = l2Loss
+        acc[name] = accuracy
+        tl[name] = total_loss
+
+    return CE, L2, acc, tl
+
+
 model_list = [jt.Loss_L2, jt.Loss_Class, jt.Loss_Jointly, jt.Train_Classifier_Only]
 
 for k in range(5):
