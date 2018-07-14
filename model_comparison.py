@@ -95,10 +95,7 @@ def compare_models(model_list, batch_size = 2000):
     x_ini, x_true, y, label = data.simulated_measurements(batch_size, validation_data=True)
     data.end()
 
-    CE = {}
-    L2 = {}
-    acc = {}
-    tl = {}
+    results = []
 
     for model in model_list:
         recon = model()
@@ -106,25 +103,21 @@ def compare_models(model_list, batch_size = 2000):
         image, l2Loss, crossEntro, accuracy, total_loss = recon.full_model_evaluation(x_ini, x_true, y, label)
         recon.end()
 
-        CE[name] = crossEntro
-        L2[name] = l2Loss
-        acc[name] = accuracy
-        tl[name] = total_loss
+        out = {}
+        out['CE'] = crossEntro
+        out['L2'] = l2Loss
+        out['Acc'] = accuracy
+
+        results.append(out)
 
         print('{}. CE: {}, acc: {}, L2: {}'.format(name, crossEntro, accuracy, l2Loss))
 
-    return CE, L2, acc, tl
+    return results
 
 
 model_list = [jt.Loss_L2, jt.Loss_Class, jt.Loss_Jointly, jt.Train_Classifier_Only, jt.C1, jt.C2, jt.C3, jt.C4, jt.C5]
+#
+# for k in range(15):
+#     visualize_models(k, model_list)
 
-for k in range(15):
-    visualize_models(k, model_list)
-
-CE, L2, acc, tl = compare_models(model_list = model_list, batch_size=4000)
-print('CE')
-print(CE)
-print('acc')
-print(acc)
-print('L2')
-print(L2)
+results = compare_models(model_list = model_list, batch_size=4000)

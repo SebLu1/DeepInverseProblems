@@ -41,8 +41,8 @@
       <file leaf-file-name="model_comparison.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/model_comparison.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="75" column="52" lean-forward="true" selection-start-line="75" selection-start-column="52" selection-end-line="75" selection-end-column="52" />
+            <state relative-caret-position="571">
+              <caret line="122" column="59" selection-start-line="122" selection-start-column="59" selection-end-line="122" selection-end-column="59" />
               <folding>
                 <element signature="e#1#28#0" expanded="true" />
               </folding>
@@ -623,7 +623,21 @@
       <option name="project" value="LOCAL" />
       <updated>1531581914903</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="comparison methodes finished">
+      <created>1531582198572</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1531582198572</updated>
+    </task>
+    <task id="LOCAL-00035" summary="comparison methodes finished">
+      <created>1531582835945</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1531582835945</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -842,8 +856,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/model_comparison.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="75" column="52" lean-forward="true" selection-start-line="75" selection-start-column="52" selection-end-line="75" selection-end-column="52" />
+        <state relative-caret-position="571">
+          <caret line="122" column="59" selection-start-line="122" selection-start-column="59" selection-end-line="122" selection-end-column="59" />
           <folding>
             <element signature="e#1#28#0" expanded="true" />
           </folding>
