@@ -53,7 +53,7 @@ def visualize_models(number, model_list):
               rowLabels=rowLabels,
               colLabels=columns,
               loc='bottom')
-    plt.savefig(path+'FBP.png', bbox_inches='tight')
+    plt.savefig(path+'/FBP.png', bbox_inches='tight')
     plt.close()
     recon.end()
 
@@ -73,7 +73,7 @@ def visualize_models(number, model_list):
         # make the labels
         true_labels = []
         for k in range(len(labels[0])):
-            true_labels.append([labels[0][k]])
+            output_labels.append([labels[0][k]])
 
         plt.figure(1)
         plt.imshow(output_pic[0, ..., 0], cmap='gray')
@@ -118,7 +118,7 @@ def compare_models(model_list, batch_size = 2000):
 
 model_list = [jt.Loss_L2, jt.Loss_Class, jt.Loss_Jointly, jt.Train_Classifier_Only, jt.C1, jt.C2, jt.C3, jt.C4, jt.C5]
 
-# for k in range(5):
-#     visualize_models(k, model_list)
+for k in range(5):
+    visualize_models(k, model_list)
 
-compare_models(model_list = model_list, batch_size=4000)
+#compare_models(model_list = model_list, batch_size=4000)
