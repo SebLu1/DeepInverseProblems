@@ -121,3 +121,4 @@ model_list = [jt.Loss_L2, jt.Loss_Class, jt.Loss_Jointly, jt.Train_Classifier_On
 #     visualize_models(k, model_list)
 
 results = compare_models(model_list = model_list, batch_size=4000)
+print(results)
