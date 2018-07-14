@@ -71,15 +71,15 @@ def visualize_models(number, model_list):
         labels, output_pic, output_labels, fbp_clas = recon.visual_model_evaluation(x_ini, x_true, y, label)
 
         # make the labels
-        true_labels = []
-        for k in range(len(labels[0])):
-            output_labels.append([labels[0][k]])
+        out_labels = []
+        for k in range(len(output_labels[0])):
+            out_labels.append([output_labels[0][k]])
 
         plt.figure(1)
         plt.imshow(output_pic[0, ..., 0], cmap='gray')
         plt.axis('off')
         # Add a table at the bottom of the axes
-        plt.table(cellText=true_labels,
+        plt.table(cellText=out_labels,
                   rowLabels=rowLabels,
                   colLabels=columns,
                   loc='bottom')
