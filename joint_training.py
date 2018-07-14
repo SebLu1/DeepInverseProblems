@@ -17,6 +17,26 @@ class Loss_Jointly(ir.Classification_Loss):
 class Train_Classifier_Only(ir.Classification_Loss):
     model_name = 'TrainClassifierOnly'
 
+class C1(ir.Classification_Loss):
+    model_name = 'JointlyTrained_C0.0001'
+    weightL2_combinedNorms = 0.0001
+
+class C2(ir.Classification_Loss):
+    model_name = 'JointlyTrained_C0.001'
+    weightL2_combinedNorms = 0.001
+
+class C3(ir.Classification_Loss):
+    model_name = 'JointlyTrained_C0.01'
+    weightL2_combinedNorms = 0.01
+
+class C4(ir.Classification_Loss):
+    model_name = 'JointlyTrained_C0.1'
+    weightL2_combinedNorms = 0.1
+
+class C5(ir.Classification_Loss):
+    model_name = 'JointlyTrained_C1.0'
+    weightL2_combinedNorms = 1.0
+
 
 if __name__ == '__main__':
     training_steps = 1500
@@ -90,25 +110,6 @@ if __name__ == '__main__':
             recon.end()
             print('C : ' + str(C))
 
-    class C1(ir.Classification_Loss):
-        model_name = 'JointlyTrained_C0.0001'
-        weightL2_combinedNorms = 0.0001
-
-    class C2(ir.Classification_Loss):
-        model_name = 'JointlyTrained_C0.001'
-        weightL2_combinedNorms = 0.001
-
-    class C3(ir.Classification_Loss):
-        model_name = 'JointlyTrained_C0.01'
-        weightL2_combinedNorms = 0.01
-
-    class C4(ir.Classification_Loss):
-        model_name = 'JointlyTrained_C0.1'
-        weightL2_combinedNorms = 0.1
-
-    class C5(ir.Classification_Loss):
-        model_name = 'JointlyTrained_C1.0'
-        weightL2_combinedNorms = 1.0
 
 
 
