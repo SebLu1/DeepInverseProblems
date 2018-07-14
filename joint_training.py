@@ -37,6 +37,14 @@ class C5(ir.Classification_Loss):
     model_name = 'JointlyTrained_C1.0'
     weightL2_combinedNorms = 1.0
 
+class C6(ir.Classification_Loss):
+    model_name = 'JointlyTrained_C10.0'
+    weightL2_combinedNorms = 10.0
+
+class C7(ir.Classification_Loss):
+    model_name = 'JointlyTrained_C100.0'
+    weightL2_combinedNorms = 100.0
+
 
 if __name__ == '__main__':
     training_steps = 1500
@@ -109,6 +117,16 @@ if __name__ == '__main__':
             recon.train_jointly(8000)
             recon.end()
             print('C : ' + str(C))
+
+    recon = C6()
+    recon.train_L2(4000)
+    recon.train_jointly(8000)
+    recon.end()
+
+    recon = C7()
+    recon.train_L2(4000)
+    recon.train_jointly(8000)
+    recon.end()
 
 
 
