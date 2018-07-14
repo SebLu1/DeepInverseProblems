@@ -118,7 +118,13 @@ def compare_models(model_list, batch_size = 2000):
 
 model_list = [jt.Loss_L2, jt.Loss_Class, jt.Loss_Jointly, jt.Train_Classifier_Only, jt.C1, jt.C2, jt.C3, jt.C4, jt.C5]
 
-for k in range(5):
+for k in range(15):
     visualize_models(k, model_list)
 
-#compare_models(model_list = model_list, batch_size=4000)
+CE, L2, acc, tl = compare_models(model_list = model_list, batch_size=4000)
+print('CE')
+print(CE)
+print('acc')
+print(acc)
+print('L2')
+print(L2)
