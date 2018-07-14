@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="66148222-bfde-4998-a425-d4226887e3de" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/joint_training.py" beforeDir="false" afterPath="$PROJECT_DIR$/joint_training.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,11 +25,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="joint_training.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="joint_training.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/joint_training.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-389">
-              <caret line="51" column="52" lean-forward="true" selection-start-line="51" selection-start-column="52" selection-end-line="51" selection-end-column="52" />
+            <state relative-caret-position="345">
+              <caret line="23" column="33" lean-forward="true" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
               </folding>
@@ -38,11 +37,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="model_comparison.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="model_comparison.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/model_comparison.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="586">
-              <caret line="125" column="52" selection-start-line="125" selection-start-column="52" selection-end-line="125" selection-end-column="52" />
+            <state relative-caret-position="-1245">
+              <folding>
+                <element signature="e#1#28#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -148,8 +149,8 @@
         <option value="$PROJECT_DIR$/Data_Preprocessing.py" />
         <option value="$PROJECT_DIR$/test.ipynb" />
         <option value="$PROJECT_DIR$/ImageRecon_classes.py" />
-        <option value="$PROJECT_DIR$/joint_training.py" />
         <option value="$PROJECT_DIR$/model_comparison.py" />
+        <option value="$PROJECT_DIR$/joint_training.py" />
       </list>
     </option>
   </component>
@@ -571,7 +572,21 @@
       <option name="project" value="LOCAL" />
       <updated>1531449135240</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="comparison methodes finished">
+      <created>1531571964159</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1531571964159</updated>
+    </task>
+    <task id="LOCAL-00028" summary="comparison methodes finished">
+      <created>1531572135438</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1531572135438</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -656,7 +671,8 @@
     <MESSAGE value="python 3 competability added" />
     <MESSAGE value="visualization methods added" />
     <MESSAGE value="comparison methode changed" />
-    <option name="LAST_COMMIT_MESSAGE" value="comparison methode changed" />
+    <MESSAGE value="comparison methodes finished" />
+    <option name="LAST_COMMIT_MESSAGE" value="comparison methodes finished" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -777,20 +793,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/joint_training.py">
+    <entry file="file://$PROJECT_DIR$/model_comparison.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-389">
-          <caret line="51" column="52" lean-forward="true" selection-start-line="51" selection-start-column="52" selection-end-line="51" selection-end-column="52" />
+        <state relative-caret-position="-1245">
           <folding>
-            <element signature="e#0#31#0" expanded="true" />
+            <element signature="e#1#28#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/model_comparison.py">
+    <entry file="file://$PROJECT_DIR$/joint_training.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="586">
-          <caret line="125" column="52" selection-start-line="125" selection-start-column="52" selection-end-line="125" selection-end-column="52" />
+        <state relative-caret-position="345">
+          <caret line="23" column="33" lean-forward="true" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

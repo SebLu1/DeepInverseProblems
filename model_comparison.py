@@ -15,7 +15,7 @@ def create_dir(path):
 
 
 def visualize_models(number, model_list):
-    path = 'Data/Evaluations/Visual_Comparison/Sample' + number
+    path = 'Data/Evaluations/Visual_Comparison/Sample' + str(number)
     create_dir(path)
 
     # plot original image and fbp plus corresponding probablities and get data needed.
