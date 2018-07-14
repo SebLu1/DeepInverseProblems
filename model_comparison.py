@@ -1,6 +1,4 @@
-import L2
 import joint_training as jt
-import adverserial as ad
 import numpy as np
 import os
 import matplotlib
