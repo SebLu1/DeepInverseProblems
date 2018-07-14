@@ -38,7 +38,7 @@ if __name__ == '__main__':
         recon4.train_L2(training_steps)
         recon4.end()
 
-    training_steps = 3000
+    training_steps = 5000
     if 0:
         recon = Loss_Class()
         recon.train_class_loss(training_steps)
@@ -76,18 +76,39 @@ if __name__ == '__main__':
 
     # run this for a bunch of different values of the weighting parameter C
     C_list = [0.0001, 0.001, 0.01, 0.1, 1.0]
-    for C in C_list:
-        class JointTrainingWithC(ir.Classification_Loss):
-            model_name = 'JointlyTrained_C' + str(C)
-            weightL2_combinedNorms = C
+    if 0:
+        for C in C_list:
+            class JointTrainingWithC(ir.Classification_Loss):
+                model_name = 'JointlyTrained_C' + str(C)
+                weightL2_combinedNorms = C
 
-        print('C : ' + str(C))
-        recon = JointTrainingWithC()
-        recon.train_L2(4000)
-        print('C : ' + str(C))
-        recon.train_jointly(8000)
-        recon.end()
-        print('C : ' + str(C))
+            print('C : ' + str(C))
+            recon = JointTrainingWithC()
+            recon.train_L2(4000)
+            print('C : ' + str(C))
+            recon.train_jointly(8000)
+            recon.end()
+            print('C : ' + str(C))
+
+    class C1(ir.Classification_Loss):
+        model_name = 'JointlyTrained_C0.0001'
+        weightL2_combinedNorms = 0.0001
+
+    class C2(ir.Classification_Loss):
+        model_name = 'JointlyTrained_C0.001'
+        weightL2_combinedNorms = 0.001
+
+    class C3(ir.Classification_Loss):
+        model_name = 'JointlyTrained_C0.01'
+        weightL2_combinedNorms = 0.01
+
+    class C4(ir.Classification_Loss):
+        model_name = 'JointlyTrained_C0.1'
+        weightL2_combinedNorms = 0.1
+
+    class C5(ir.Classification_Loss):
+        model_name = 'JointlyTrained_C1.0'
+        weightL2_combinedNorms = 1.0
 
 
 

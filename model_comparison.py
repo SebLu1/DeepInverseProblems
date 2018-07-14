@@ -113,10 +113,14 @@ def compare_models(model_list, batch_size = 2000):
         acc[name] = accuracy
         tl[name] = total_loss
 
+        print('{}. CE: {}, acc: {}, L2: {}'.format(name, crossEntro, accuracy, l2Loss))
+
     return CE, L2, acc, tl
 
 
-model_list = [jt.Loss_L2, jt.Loss_Class, jt.Loss_Jointly, jt.Train_Classifier_Only]
+model_list = [jt.Loss_L2, jt.Loss_Class, jt.Loss_Jointly, jt.Train_Classifier_Only, jt.C1, jt.C2, jt.C3, jt.C4, jt.C5]
 
 for k in range(5):
     visualize_models(k, model_list)
+
+compare_models(model_list = model_list, batch_size=500)
