@@ -139,7 +139,7 @@ if __name__ == '__main__':
 
     recon = train_classifier_only()
     recon.train_L2(8000)
-    recon.train_jointly(8000)
+    recon.train_classifier_only(8000)
     recon.end()
 
     recon = Loss_Jointly()
