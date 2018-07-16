@@ -121,5 +121,5 @@ model_list = [jt.Loss_L2, jt.Loss_Jointly, jt.Train_Classifier_Only, jt.C1, jt.C
 # for k in range(15):
 #     visualize_models(k, model_list)
 
-results = compare_models(model_list = model_list, batch_size=4000)
+results = compare_models(model_list = model_list, batch_size=8000)
 print(results)
