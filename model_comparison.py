@@ -87,7 +87,7 @@ def visualize_models(number, model_list):
         plt.close()
         recon.end()
 
-def compare_models(model_list, batch_size = 2000):
+def compare_models(model_list, batch_size = 10000):
     path = 'Data/Evaluations/Comparison_Classification'
     create_dir(path)
 
