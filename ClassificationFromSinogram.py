@@ -117,7 +117,7 @@ with tf.name_scope('Classifier'):
     # drop = tf.layers.dropout(dense, rate=keep_prob)
 
     # logits
-    output = tf.nn.tanh((tf.matmul(dense, logits_W) + logits_bias))
+    output = (tf.matmul(dense, logits_W) + logits_bias)
     out_norm = tf.norm(output, name='out_norm')
 
 
